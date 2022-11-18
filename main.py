@@ -12,4 +12,10 @@ def func():
         id = message.chat.id
         msg = message.text
         bot.send_message(id, f'{name}\n{id}\n{msg}')
+        
+    bot.polling()
+
+
+func()
+
 
